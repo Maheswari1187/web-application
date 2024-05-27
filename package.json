@@ -1,4 +1,5 @@
 {
+  "homepage":" https://maheswari1187.github.io/web-application",
   "name": "b-pro",
   "version": "0.1.0",
   "private": true,
@@ -29,6 +30,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "server": "nodemon server",
     "client": "react-scripts start --prefix client",
